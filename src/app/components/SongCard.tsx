@@ -5,7 +5,7 @@ import ConfirmModal from './ConfirmModal';
 
 interface SongCardProps {
   song: Song;
-  onDelete: (id: number | string) => void;
+  onDelete: (id: number | string | undefined) => void;
 }
 
 const SongCard: React.FC<SongCardProps> = ({ song, onDelete }) => {

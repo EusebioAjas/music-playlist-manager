@@ -25,7 +25,7 @@ const Home: React.FC = () => {
     setTimeout(() => setMessage(null), 3000);
   };
 
-  const handleDelete = async (id: number | string) => {
+  const handleDelete = async (id: number | string | undefined) => {
     await deleteSong(id);
     fetchSongs();
   };

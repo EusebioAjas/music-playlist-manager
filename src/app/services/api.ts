@@ -18,7 +18,7 @@ export const updateSong = async (id: number | string, song: Song): Promise<Song>
   return response.data;
 };
 
-export const deleteSong = async (id: number | string): Promise<void> => {
+export const deleteSong = async (id: number | string | undefined): Promise<void> => {
   await axios.delete(`${API_URL}/${id}`);
 };
 
